@@ -25,23 +25,23 @@ AI Hackathon에서 세상을 변화시킬 비전을 기다립니다.
 <table>
   <tr style="background-color:#fff">
     <td style="text-align:center">
-      <img src="res/ksh.jpg" width="100"><br>
+      <img src="m/ksh.jpg" width="100"><br>
       김성훈
     </td>
     <td style="text-align:center">
-      <img src="전희재.jpg"><br>
+      <img src="m/jhj.jpg"><br>
       전희재
     </td>
     <td style="text-align:center">
-      <img src="김영준.jpg"><br>
+      <img src="m/kis.jpg"><br>
       김영준
     </td>
     <td style="text-align:center">
-      <img src="고병수.jpg"><br>
+      <img src="kbs.jpg"><br>
       고병수
     </td>
     <td style="text-align:center">
-      <img src="김인식.jpg"><br>
+      <img src="kiss.jpg"><br>
       김인식
     </td>
   </tr>
