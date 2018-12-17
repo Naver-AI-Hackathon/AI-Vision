@@ -1,4 +1,4 @@
-# 네이버 AI 해커톤 2018_Ai Vision(수정중)
+# 네이버 AI 해커톤 2018_Ai Vision
 
 "올해 봄 첫걸음을 내디딘 AI해커톤을 기억하시나요?"
 
@@ -18,36 +18,6 @@
 AI Hackathon에서 세상을 변화시킬 비전을 기다립니다.
 
 
-
-## 멘토
-여러분들과 함께 문제 해결 방법을 고민하고 조언 해주실 슈퍼 멘토를 소개합니다.
-
-<table>
-  <tr style="background-color:#fff">
-    <td style="text-align:center">
-     
-<br>
-      김성훈
-    </td>
-    <td style="text-align:center">
-      <img src="m/jhj.jpg"><br>
-      전희재
-    </td>
-    <td style="text-align:center">
-      <img src="m/kis.jpg"><br>
-      김영준
-    </td>
-    <td style="text-align:center">
-      <img src="kbs.jpg"><br>
-      고병수
-    </td>
-    <td style="text-align:center">
-      <img src="kiss.jpg"><br>
-      김인식
-    </td>
-  </tr>
-</table>
-
 ## 참가 신청
 AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신청할 수 있습니다.<br>
 <strong>개인 또는 팀(최대 3명)</strong>으로 참가 가능합니다. [신청폼](https://goo.gl/forms/wElbyX2P6za6tnnC3) 으로 참가 신청하세요!
@@ -66,7 +36,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
   <tr>
     <td>
       <strong>참가 신청</strong><br>
-      ~2018년 12월 30일(월)
+      ~2018년 12월 30일(일)
     </td>
     <td style="text-align:center">약 2주</td>
     <td>
