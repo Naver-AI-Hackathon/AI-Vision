@@ -123,8 +123,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
 * 우수 참가자 중 네이버 입사 지원 시 혜택
 
 ## FAQ
-* 자주 문의하는 내용을 확인해 보세요! [FAQ.md](-------)
-* NSML에 대해 자주 문의 하는 내용을 공유합니다. [FAQ_NSML.md](-------)
+* 자주 문의하는 내용을 확인해 보세요! [FAQ.md](https://campaign.naver.com/aihackathon2018/)
 
 ## 문의
 * 해커톤 관련 문의는 [Q&A issue page](https://github.com/AiHackathon2018/AI-Vision/issues)를 통해 할 수 있습니다.<br>
