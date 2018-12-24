@@ -128,6 +128,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
 ## 문의
 * 해커톤 관련 문의는 [Q&A issue page](https://github.com/AiHackathon2018/AI-Vision/issues)를 통해 할 수 있습니다.<br>
 * 관련 문의는 Tag를 달아 코멘트를 남겨주세요.
+* Q&A 문의 답변 시간은 월-금 10:00-19:00 입니다.
 
 
 ## License
