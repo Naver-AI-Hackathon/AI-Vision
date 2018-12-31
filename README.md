@@ -40,7 +40,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
     </td>
     <td style="text-align:center">약 2주</td>
     <td>
-      접수중
+      신청 마감
     </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
     </td>
     <td style="text-align:center">2주</td>
     <td>
-      온라인<br>
+      온라인 1/2(수) 12PM(점심 12시)에 베이스라인 공개와 함께 시작!<br>
       <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
     </td>
   </tr>
