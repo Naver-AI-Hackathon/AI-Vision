@@ -95,8 +95,8 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
 &nbsp;&nbsp;&nbsp;네이버 본사 - 커넥트원 간 이동 차량 및 결선 기간 중 숙식, 간식 등을 제공합니다.
 
 ## 미션
-* 예선 : 라인 상품 구분하기
-* 결선 : 현재 가장 관심 있고 실제로 풀고 있는 product(상품)image retrieval
+* 예선 1차 : 라인 상품 구분하기
+* 예선 2차, 결선(온라인/오프라인) : 현재 가장 관심 있고 실제로 풀고 있는 product(상품)image retrieval
 > ※ 모든 미션은 NSML 플랫폼을 사용해 해결합니다.<br>
 > &nbsp;&nbsp;&nbsp;NSML을 통해 미션을 해결하는 방법은 이 [튜토리얼](https://n-clair.github.io/vision-docs/)을 참고해 주세요.
 
