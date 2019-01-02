@@ -95,6 +95,7 @@ Training data를 이용하여 image retrieval model을 학습하고, test시에�
 Training data는 각 class(상품) 폴더 안에 그 상품을 촬영한 이미지들이 존재합니다.
 - Class: 1,000
 - Total images: 7,104
+- Training data 예시: [training_example.zip](https://github.com/AiHackathon2018/AI-Vision/files/2719945/training_example.zip), [[참고 이슈](https://github.com/AiHackathon2018/AI-Vision/issues/33)]
 
 #### Test data
 Test data는 query image와 reference image로 나뉘어져 있습니다.
