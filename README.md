@@ -95,13 +95,47 @@ Training data를 이용하여 image retrieval model을 학습하고, test시에�
 Training data는 각 class(상품) 폴더 안에 그 상품을 촬영한 이미지들이 존재합니다.
 - Class: 1,000
 - Total images: 7,104
-- Training data 예시: [training_example.zip](https://github.com/AiHackathon2018/AI-Vision/files/2719945/training_example.zip), [[참고 이슈](https://github.com/AiHackathon2018/AI-Vision/issues/33)]
+- Training data 예시: [Data_example_ph1.zip](https://github.com/AiHackathon2018/AI-Vision/files/2720124/Data_example_ph1.zip)
+  - 예선 1차 학습 데이터 중 10개의 클래스이며, 각 클래스의 모든 이미지를 포함합니다.
 
 #### Test data
 Test data는 query image와 reference image로 나뉘어져 있습니다.
 - Query images: 195
 - Reference images: 1,127
 - Total images: 1,322
+
+#### 데이터셋 구조
+```
+ir_ph1
+|-- train
+      |-- train_data
+            |-- 1141  # 상품 ID
+                  |-- s0.jpg
+                  |-- s1.jpg
+                  ...
+                  |-- s5.jpg
+            |-- 1142 # 상품 ID
+                  |-- s0.jpg
+                  |-- s1.jpg
+                  ...
+                  |-- s4.jpg
+             ...
+|-- test
+      |-- test_data
+            |-- query # 질의 이미지 폴더
+                  |-- s0.jpg
+                  |-- s1.jpg
+                  |-- s2.jpg
+                  ...
+            |-- reference # 검색 대상 이미지 폴더
+                  |-- s0.jpg
+                  |-- s1.jpg
+                  |-- s2.jpg
+                  ...
+            ...
+```
+
+> ※ 폴더 이름은 위와 같지만, 파일 이름은 위 예시와 다를 수 있습니다.
 
 ### 예선 2차 / 결선(온라인, 오프라인)
 예선 2차는 대규모의 일반 상품 image retrieval challenge 입니다.
