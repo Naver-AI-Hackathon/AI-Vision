@@ -22,7 +22,7 @@ AI Hackathon에서 세상을 변화시킬 비전을 기다립니다.
 AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신청할 수 있습니다.<br>
 <strong>개인 또는 팀(최대 3명)</strong>으로 참가 가능합니다. [신청폼](https://goo.gl/forms/wElbyX2P6za6tnnC3) 으로 참가 신청하세요!
 
-* **신청기간**:~2018년 12월 30일(일)
+* **신청기간**:~2018년 12월 30일(월)
 * **참가 신청 폼**: https://goo.gl/forms/wElbyX2P6za6tnnC3
 * 신청자가 많을 경우 심사 후 개별 안내
 
@@ -40,7 +40,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
     </td>
     <td style="text-align:center">약 2주</td>
     <td>
-      신청 마감
+      접수중
     </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
     </td>
     <td style="text-align:center">2주</td>
     <td>
-      온라인 1/2(수) 12PM(점심 12시)에 베이스라인 공개와 함께 시작!<br>
+      온라인<br>
       <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
     </td>
   </tr>
@@ -60,17 +60,6 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
       2019년 1월 16일(수)~2019년 1월 30일(수)
     </td>
     <td style="text-align:center">2주</td>
-    <td>
-      온라인<br>
-      <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
-    </td>
-  </tr>
-   <tr>
-    <td>
-      <strong>온라인 결선</strong><br>
-      2019년 2월 12일(화)~2019년 2월 20일(수)
-    </td>
-    <td style="text-align:center">9일</td>
     <td>
       온라인<br>
       <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
@@ -89,19 +78,77 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
 </table>
 
 > ※ 예선 및 결선 참가자에게는 개별로 참가 안내드립니다.<br>
-> ※ 결선 진출자는 온라인 결선과 오프라인 결선을 모두 진행합니다.<br>
-> ※ **온라인 결선 과정은 오프라인 결선 전, 모델을 향상시키기 위함이며, 온라인 결선을 거치더라도 별도의 컷오프 없이 모든 결전 참여팀이 오프라인 결선에 참여할 수 있습니다.**<br>
 > &nbsp;&nbsp;&nbsp;결선 참가자는 네이버 본사(그린팩토리, 분당)에 모여서 커넥트원(춘천)으로 함께 이동하며<br>
 &nbsp;&nbsp;&nbsp;네이버 본사 - 커넥트원 간 이동 차량 및 결선 기간 중 숙식, 간식 등을 제공합니다.
 
 ## 미션
-* 예선 1차 : 라인 상품 구분하기
-* 예선 2차, 결선(온라인/오프라인) : 현재 가장 관심 있고 실제로 풀고 있는 product(상품)image retrieval
+* 예선 1차 : 소규모의 라인프렌즈 상품 image retrieval
+* 예선 2차 / 결선(온라인, 오프라인) : 대규모의 일반 상품 image retrieval
 > ※ 모든 미션은 NSML 플랫폼을 사용해 해결합니다.<br>
 > &nbsp;&nbsp;&nbsp;NSML을 통해 미션을 해결하는 방법은 이 [튜토리얼](https://n-clair.github.io/vision-docs/)을 참고해 주세요.
 
-## 진행 방식 및 심사 기준
+### 예선 1차
+예선 1차는 소규모의 라인프렌즈 상품 데이터를 이용한 image retrieval challenge 입니다.
+Training data를 이용하여 image retrieval model을 학습하고, test시에는 각 query image(질의 이미지)에 대해 reference images(검색 대상 이미지) 중에서 질의 이미지에 나온 상품과 동일한 상품들을 찾아야 합니다.
 
+#### Training data
+Training data는 각 class(상품) 폴더 안에 그 상품을 촬영한 이미지들이 존재합니다.
+- Class: 1,000
+- Total images: 7,104
+
+#### Test data
+Test data는 query image와 reference image로 나뉘어져 있습니다.
+- Query images: 195
+- Reference images: 1,127
+- Total images: 1,322
+
+### 예선 2차 / 결선(온라인, 오프라인)
+예선 2차는 대규모의 일반 상품 image retrieval challenge 입니다.
+예선 1차와 같은 방식이지만, 데이터의 종류가 라인프렌즈로 한정되어 있지 않고, 데이터의 개수가 상대적으로 큰 경우입니다.
+
+### 평가지표
+- 평가지표는 image retrieval 분야에서 흔히 쓰이는 [mAP(mean average precision)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval)#Mean_average_precision)을 사용합니다.
+- 동점자가 나올 경우에는 Recall@k를 계산하여 순위를 결정할 수 있습니다.
+  - Recall@k 참고: [Deep Metric Learning via Lifted Structured Feature Embedding](https://arxiv.org/abs/1511.06452)
+> For the retrieval task, we use the Recall@K metric. Each test image (query) first retrieves K nearest neighbors from the test set and receives score 1 if an image of the same class is retrieved among the K nearest neighbors and 0 otherwise. Recall@K averages this score over all the images.
+
+## Baseline in NSML
+
+### Baseline model 정보
+- Deep learning framework: Keras
+- Docker 이미지: `nsml/ml:cuda9.0-cudnn7-tf-1.11torch0.4keras2.2`
+- Python 3.6
+- 평가지표: mAP
+- Epoch=100으로 학습한 결과
+```
+ mAP:  0.011977790987331881
+```
+
+### NSML
+
+1. 실행법
+
+    - https://hack.nsml.navercorp.com/download 에서 플랫폼에 맞는 nsml을 다운받습니다.
+
+    - `nsml run`명령어를 이용해서 `main.py`를 실행합니다.
+
+        ```bash
+        $ nsml run -d ir_ph1 -e main.py
+        ```
+2. 제출하기
+
+    - 세션의 모델 정보를 확인합니다.
+        ```bash
+        $ nsml model ls [session]
+        ```
+    - 확인한 모델로 submit 명령어를 실행합니다.
+        ```bash
+        $ nsml submit [session] [checkpoint]
+        ```
+
+3. [web](https://hack.nsml.navercorp.com/leaderboard/ir_ph1) 에서 점수를 확인할수있습니다.
+
+## 진행 방식 및 심사 기준
 ### 예선
 
 * 예선 참가팀에게는 예선 기간중 매일 시간당 60-120 NSML 크레딧을 지급합니다.
@@ -120,16 +167,10 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
 * 전체 인원에 따라 결선 진출팀 수에 변동이 있을 수 있습니다.
 
 ### 결선
-* 결선 참가자에게 제공하는 크레딧은 추후 공지 예정입니다.
-* 별도의 컷오프 없이 모든 결선 참여자는 온라인/오프라인 결선 진행 
-
-#### ***온라인 결선***
-* 일정 : 2019. 2. 12 ~ 2019. 2. 20
-* 온라인 결선 과정은 오프라인 결선 전, 모델을 향상시키기 위함입니다.
-
-#### ***오프라인 결선***
-* 일정 : 2019. 2.21 – 2019. 1. 22
+* 일정 : 2019. 2. 21 – 2019. 2. 22 1박 2일간 춘천 커넥트원에서 진행
 * 최종 우승자는 NSML 리더보드 순위(1위, 2위, 3위)로 결정합니다.
+* 결선 참가자에게 제공하는 크레딧은 추후 공지 예정입니다.
+
 
 > ※ 1 NSML 크레딧으로 NSML GPU를 1분 사용할 수 있습니다.<br>
 > &nbsp;&nbsp;&nbsp;10 NSML 크레딧 = GPU 1개 * 10분 = GPU 2개 * 5분 사용
@@ -170,4 +211,3 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTIO
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
-
