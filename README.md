@@ -119,10 +119,7 @@ Test data는 query image와 reference image로 나뉘어져 있습니다.
 - Docker 이미지: `nsml/ml:cuda9.0-cudnn7-tf-1.11torch0.4keras2.2`
 - Python 3.6
 - 평가지표: mAP
-- Epoch=100으로 학습한 결과
-```
- mAP:  0.011977790987331881
-```
+- Epoch=100으로 학습한 결과: mAP 0.0116
 
 ### NSML
 
