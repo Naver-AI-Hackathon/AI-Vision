@@ -180,6 +180,30 @@ ir_ph1_v2
 
 3. [web](https://hack.nsml.navercorp.com/leaderboard/ir_ph1_v2) 에서 점수를 확인할수있습니다.
 
+### Infer 함수
+
+Submit을 하기위해서는 `infer()`함수에서 [[다음](https://oss.navercorp.com/Hackathon/Vision_AIHackathon/blob/master/main.py#L92)]과 같이 return 포맷을 정해줘야합니다.
+
+대략적인 형태는 아래와 같습니다.
+
+```python
+[
+    (0, ('query_0', ['refer_12', 'refer_3', 'refer_35', 'refer_87', 'refer_152', 'refer_2'])),
+    (1, ('query_1', ['refer_2', 'refer_25', 'refer_13', 'refer_7', 'refer_64', 'refer_243'])),
+     ...
+]
+```
+
+- 최종 return 형태는 list로 반환해야 합니다.
+- `(0, ('query_0', ['refer_12', 'refer_3', 'refer_35', 'refer_87', 'refer_152', 'refer_2']))` tuple
+  - 위 형태의 tuple의 첫번째 숫자 값(위의 예제에서는 0)은 query 이미지의 번호이며, 평가와는 무관합니다.
+- `('query_0', ['refer_12', 'refer_3', 'refer_35', 'refer_87', 'refer_152', 'refer_2'])` tuple
+  - `query_0`는 query 이미지 `test_data/query/query_0.jpg`에서 확장자를 뺀 파일명입니다.
+  - `refer_12`는 reference 이미지 `test_data/reference/refer_0.jpg`에서 확장자를 뺀 파일명입니다.
+  - `['refer_12', 'refer_3', 'refer_35', 'refer_87', 'refer_152', 'refer_2']`은 모든 reference 이미지들을 `query_0`와 가까운 순으로 정렬한 list입니다. (검색 결과의 ranking list)
+
+
+
 ## 진행 방식 및 심사 기준
 ### 예선
 
