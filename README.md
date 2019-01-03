@@ -106,7 +106,7 @@ Test data는 query image와 reference image로 나뉘어져 있습니다.
 
 #### 데이터셋 구조
 ```
-ir_ph1
+ir_ph1_v2
 |-- train
       |-- train_data
             |-- 1141  # 상품 ID
@@ -165,7 +165,7 @@ ir_ph1
     - `nsml run`명령어를 이용해서 `main.py`를 실행합니다.
 
         ```bash
-        $ nsml run -d ir_ph1 -e main.py
+        $ nsml run -d ir_ph1_v2 -e main.py
         ```
 2. 제출하기
 
@@ -178,7 +178,7 @@ ir_ph1
         $ nsml submit [session] [checkpoint]
         ```
 
-3. [web](https://hack.nsml.navercorp.com/leaderboard/ir_ph1) 에서 점수를 확인할수있습니다.
+3. [web](https://hack.nsml.navercorp.com/leaderboard/ir_ph1_v2) 에서 점수를 확인할수있습니다.
 
 ## 진행 방식 및 심사 기준
 ### 예선
