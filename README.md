@@ -199,7 +199,7 @@ Submit을 하기위해서는 `infer()`함수에서 [[다음](https://oss.naverco
   - 위 형태의 tuple의 첫번째 숫자 값(위의 예제에서는 0)은 query 이미지의 번호이며, 평가와는 무관합니다.
 - `('query_0', ['refer_12', 'refer_3', 'refer_35', 'refer_87', 'refer_152', 'refer_2'])` tuple
   - `query_0`는 query 이미지 `test_data/query/query_0.jpg`에서 확장자를 뺀 파일명입니다.
-  - `refer_12`는 reference 이미지 `test_data/reference/refer_0.jpg`에서 확장자를 뺀 파일명입니다.
+  - `refer_12`는 reference 이미지 `test_data/reference/refer_12.jpg`에서 확장자를 뺀 파일명입니다.
   - `['refer_12', 'refer_3', 'refer_35', 'refer_87', 'refer_152', 'refer_2']`은 모든 reference 이미지들을 `query_0`와 가까운 순으로 정렬한 list입니다. (검색 결과의 ranking list)
 
 
