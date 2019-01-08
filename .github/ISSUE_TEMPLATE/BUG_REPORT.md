@@ -3,22 +3,12 @@ name: 🐛 Bug Report
 about: Create a report to help us improve 🤔.
 ---
 
-<!-- ⚠️ Please answer these questions before submitting your issue. (If there is no response, it will close automatically after a two-week later)-->
-
-
-<!-- ⚠️ Before writing your issue make sure you are using:-->
-<!-- macOS version 10.x.x -->
-<!-- nsml run -d mnist -e main.py -->
-
 **Informations**
 #### CLI
 - **OS (Mac, Windows, Linux, etc) and version**:
 - **client version(please show nsml --version)**:
 - **전체 실행 명령어**:
 
-<!-- ⚠️ Before writing your issue make sure you are using:-->
-<!-- chrome -->
-<!-- https://hack.nsml.navercorp.com/resource -->
 #### WEB
 - **Brower (chrome, firfox, etc)**:
 - **URL**:
