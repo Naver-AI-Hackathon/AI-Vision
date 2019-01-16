@@ -46,9 +46,9 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
   <tr>
     <td>
       <strong>예선 1라운드</strong><br>
-      2019년 1월 2일(수)~2019년 1월 16일(수)23:59:59
+      2019년 1월 2일(수) ~ 1월 16일(수) 23:59:59
     </td>
-    <td style="text-align:center">2주</td>
+    <td style="text-align:center">약 2주</td>
     <td>
       온라인<br>
       <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
@@ -57,9 +57,9 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
   <tr>
     <td>
       <strong>예선 2라운드</strong><br>
-      18일(금) 14:00 시작 ~ 1월31일(목) 16:00 마감
+      2019년 1월 18일(금) 14:00 ~ 1월 31일(목) 16:00
     </td>
-    <td style="text-align:center">2주</td>
+    <td style="text-align:center">약 2주</td>
     <td>
       온라인<br>
       <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
@@ -67,8 +67,19 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
   </tr>
   <tr>
     <td>
-      <strong>결선</strong><br>
-      2019년 2월 21일(목)~2월 22일(금)
+      <strong>결선(온라인)</strong><br>
+      2019년 2월 12일(화) ~ 2월 20일(수)
+    </td>
+    <td style="text-align:center">약 9일</td>
+    <td>
+      온라인<br>
+      <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <strong>결선(오프라인)</strong><br>
+      2019년 2월 21일(목) ~ 2월 22일(금)
     </td>
     <td style="text-align:center">1박 2일</td>
     <td>
@@ -105,20 +116,21 @@ Test data는 query image와 reference image로 나뉘어져 있습니다.
 - Total images: 1,322
 
 #### 데이터셋 구조
+예선 1차, 예선 2차, 결선(온라인, 오프라인) 모두 동일합니다.
+
 ```
-ir_ph1_v2
 |-- train
       |-- train_data
             |-- 1141  # 상품 ID
                   |-- s0.jpg
                   |-- s1.jpg
+                  |-- s2.jpg
                   ...
-                  |-- s5.jpg
             |-- 1142 # 상품 ID
                   |-- s0.jpg
                   |-- s1.jpg
+                  |-- s2.jpg
                   ...
-                  |-- s4.jpg
              ...
 |-- test
       |-- test_data
@@ -223,6 +235,12 @@ Submit을 하기위해서는 `infer()`함수에서 [[다음](https://oss.naverco
 * 전체 인원에 따라 결선 진출팀 수에 변동이 있을 수 있습니다.
 
 ### 결선
+#### 결선 (온라인)
+* 일정 : 2019. 2. 12 – 2019. 2. 20
+* 온라인 결선 과정은 오프라인 결선 전, 모델을 향상시키기 위함입니다.
+* 온라인 결선을 거치더라도 별도의 컷오프 없이 모든 결선 참여팀이 오프라인 결선에 참여할 수 있습니다.
+
+#### 결선 (오프라인)
 * 일정 : 2019. 2. 21 – 2019. 2. 22 1박 2일간 춘천 커넥트원에서 진행
 * 최종 우승자는 NSML 리더보드 순위(1위, 2위, 3위)로 결정합니다.
 * 결선 참가자에게 제공하는 크레딧은 추후 공지 예정입니다.
