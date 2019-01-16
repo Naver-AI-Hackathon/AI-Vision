@@ -40,13 +40,13 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
     </td>
     <td style="text-align:center">약 2주</td>
     <td>
-      접수중
+      접수 마감
     </td>
   </tr>
   <tr>
     <td>
       <strong>예선 1라운드</strong><br>
-      2019년 1월 2일(수)~2019년 1월 16일(수)
+      2019년 1월 2일(수)~2019년 1월 16일(수)23:59:59
     </td>
     <td style="text-align:center">2주</td>
     <td>
@@ -57,7 +57,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
   <tr>
     <td>
       <strong>예선 2라운드</strong><br>
-      2019년 1월 16일(수)~2019년 1월 30일(수)
+      18일(금) 14:00 시작 ~ 1월31일(목) 16:00 마감
     </td>
     <td style="text-align:center">2주</td>
     <td>
