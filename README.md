@@ -57,9 +57,9 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
   <tr>
     <td>
       <strong>예선 2라운드</strong><br>
-      2019년 1월 18일(금) 14:00 ~ 1월 31일(목) 16:00
+      2019년 1월 23일(수) 14:00 ~ 2월 8일(금) 16:00
     </td>
-    <td style="text-align:center">약 2주</td>
+    <td style="text-align:center"> 약 16일</td>
     <td>
       온라인<br>
       <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
@@ -68,7 +68,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
   <tr>
     <td>
       <strong>결선(온라인)</strong><br>
-      2019년 2월 12일(화) ~ 2월 20일(수)
+      2019년 2월 12일(화) 14:00 ~ 2월 20일(수)
     </td>
     <td style="text-align:center">약 9일</td>
     <td>
