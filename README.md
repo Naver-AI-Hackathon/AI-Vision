@@ -123,7 +123,7 @@ Test data는 query image와 reference image로 나뉘어져 있습니다.
 Training data는 각 class(상품) 폴더 안에 그 상품을 촬영한 이미지들이 존재합니다.
 - Class: 1,383
 - Total images: 73,551
-- Training data 예시: Data_example_ph2.zip(예정)
+- Training data 예시: [Data_example_ph2.zip](https://github.com/AiHackathon2018/AI-Vision/files/2785575/Data_example_ph2.zip)
   - 예선 2차 학습 데이터 중 5개의 클래스이며, 각 클래스의 대부분 이미지를 포함합니다.
 
 #### Test data
