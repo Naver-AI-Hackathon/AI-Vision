@@ -59,7 +59,7 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
       <strong>예선 2라운드</strong><br>
       2019년 1월 23일(수) 14:00 ~ 2월 8일(금) 16:00
     </td>
-    <td style="text-align:center"> 약 16일</td>
+    <td style="text-align:center">약 16일</td>
     <td>
       온라인<br>
       <a href="https://hack.nsml.navercorp.com">https://hack.nsml.navercorp.com</a>
@@ -115,6 +115,25 @@ Test data는 query image와 reference image로 나뉘어져 있습니다.
 - Reference images: 1,127
 - Total images: 1,322
 
+### 예선 2차 / 결선(온라인, 오프라인)
+예선 2차 / 결선(온라인, 오프라인)은 대규모의 일반 상품 데이터를 이용한 image retrieval challenge 입니다.
+예선 1차와 같은 방식이지만, 데이터의 종류가 라인프렌즈로 한정되어 있지 않고, 데이터의 개수가 상대적으로 많습니다.
+
+#### Training data
+Training data는 각 class(상품) 폴더 안에 그 상품을 촬영한 이미지들이 존재합니다.
+- Class: 1,383
+- Total images: 73,551
+- Training data 예시: Data_example_ph2.zip(예정)
+  - 예선 2차 학습 데이터 중 5개의 클래스이며, 각 클래스의 대부분 이미지를 포함합니다.
+
+#### Test data
+Test data는 query image와 reference image로 나뉘어져 있습니다.
+- Query images: 18,027
+- Reference images: 36,748
+- Total images: 54,775
+
+> ※ 예선 2차와 결선(온라인)에서는 전체 test data의 query images 중 50%만으로 순위를 결정합니다. 결선(오프라인)에서 나머지 50%를 포함하여, 전체 test data로 최종 순위를 결정합니다.
+
 #### 데이터셋 구조
 예선 1차, 예선 2차, 결선(온라인, 오프라인) 모두 동일합니다.
 
@@ -149,17 +168,18 @@ Test data는 query image와 reference image로 나뉘어져 있습니다.
 
 > ※ 폴더 이름은 위와 같지만, 파일 이름은 위 예시와 다를 수 있습니다.
 
-### 예선 2차 / 결선(온라인, 오프라인)
-예선 2차는 대규모의 일반 상품 image retrieval challenge 입니다.
-예선 1차와 같은 방식이지만, 데이터의 종류가 라인프렌즈로 한정되어 있지 않고, 데이터의 개수가 상대적으로 큰 경우입니다.
-
 ### 평가지표
 - 평가지표는 image retrieval 분야에서 흔히 쓰이는 [mAP(mean average precision)](https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval)#Mean_average_precision)을 사용합니다.
+  - 예선 1차에서는 mAP로 score를 계산합니다.
+  - 예선 2차와 결선(온라인, 오프라인)에서는 테스트 데이터의 규모가 크기때문에, 상위 1000개의 검색 결과만 고려하는 mAP@1000으로 score를 계산합니다.
 - 동점자가 나올 경우에는 Recall@k를 계산하여 순위를 결정할 수 있습니다.
   - Recall@k 참고: [Deep Metric Learning via Lifted Structured Feature Embedding](https://arxiv.org/abs/1511.06452)
 > For the retrieval task, we use the Recall@K metric. Each test image (query) first retrieves K nearest neighbors from the test set and receives score 1 if an image of the same class is retrieved among the K nearest neighbors and 0 otherwise. Recall@K averages this score over all the images.
 
 ## Baseline in NSML
+- NSML에 적응하는데 도움을 주기 위해, 예선 1라운드에만 베이스라인 모델을 제공합니다.
+- 예선 2라운드 부터는 train 및 test 데이터의 개수가 매우 커지기 때문에, 베이스라인 모델처럼 데이터를 한번에 읽고 사용하는 방식은 OOM(Out Of Memory) 문제가 발생할 수 있습니다. 따라서, 데이터를 batch 단위로 읽고 train 및 inference하는 방식을 추천드립니다.
+  - E.g. `tf.data.Dataset` in TensorFlow, `ImageDataGenerator` in Keras, `DataLoader` in PyTorch
 
 ### Baseline model 정보
 - Deep learning framework: Keras
@@ -213,7 +233,8 @@ Submit을 하기위해서는 `infer()`함수에서 [[다음](https://oss.naverco
   - `query_0`는 query 이미지 `test_data/query/query_0.jpg`에서 확장자를 뺀 파일명입니다.
   - `refer_12`는 reference 이미지 `test_data/reference/refer_12.jpg`에서 확장자를 뺀 파일명입니다.
   - `['refer_12', 'refer_3', 'refer_35', 'refer_87', 'refer_152', 'refer_2', ...]`은 모든 reference 이미지들을 `query_0`와 가까운 순으로 정렬한 list입니다. (검색 결과의 ranking list)
-
+  - 예선 1차에서는 mAP로 score를 계산하기 때문에, ranking list에 전체 reference 이미지들이 존재해야 합니다.
+  - 예선 2차, 결선(온라인, 오프라인)에서는 mAP@1000으로 score를 계산하기 때문에, ranking list에 1000개의 reference 이미지만 존재하면 됩니다.
 
 
 ## 진행 방식 및 심사 기준
@@ -230,7 +251,7 @@ Submit을 하기위해서는 `infer()`함수에서 [[다음](https://oss.naverco
 
 
 #### ***예선 2라운드***
-* 일정 : 2019. 1.16 – 2019. 1. 30
+* 일정 : 2019. 1. 23 – 2019. 2. 8
 * NSML 리더보드 순위로 결선 진출자 선정 (결선 진출자 약 40팀 선발)
 * 전체 인원에 따라 결선 진출팀 수에 변동이 있을 수 있습니다.
 
