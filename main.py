@@ -29,7 +29,11 @@ def bind_model(model):
         model.load_weights(file_path)
         print('model loaded!')
 
-    def infer(queries, db):
+    def infer(queries, _):
+        test_path = DATASET_PATH + '/test/test_data'
+
+        db = [os.path.join(test_path, 'reference', path) for path in os.listdir(os.path.join(test_path, 'reference'))]
+
         queries = [v.split('/')[-1].split('.')[0] for v in queries]
         db = [v.split('/')[-1].split('.')[0] for v in db]
         queries.sort()
