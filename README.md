@@ -17,7 +17,7 @@
 **“ Competition? It’s not competition Coorperation! ”**<br>
 AI Hackathon에서 세상을 변화시킬 비전을 기다립니다.
 
-## Leaderboard (예선2차, 진행중 )
+## Leaderboard (결선(온라인), 진행중 )
  * https://hack.nsml.navercorp.com/board
 
 ## 참가 신청
