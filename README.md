@@ -93,7 +93,37 @@ AI로 문제를 해결하는 데 관심 있는 분이라면 누구나 참가 신
 > ※ 예선 및 결선 참가자에게는 개별로 참가 안내드립니다.<br>
 > &nbsp;&nbsp;&nbsp;결선 참가자는 네이버 본사(그린팩토리, 분당)에 모여서 커넥트원(춘천)으로 함께 이동하며<br>
 &nbsp;&nbsp;&nbsp;네이버 본사 - 커넥트원 간 이동 차량 및 결선 기간 중 숙식, 간식 등을 제공합니다.
-
+## 대회종료
+<table>
+  <tr>
+    <th style="text-align:center;width:8%">순위</th>
+    <th style="text-align:center;width:46%">팀명</th>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      1위
+    </td>
+    <td style="text-align:center">
+      Cheat_Key 팀
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      2위
+    </td>
+    <td style="text-align:center">
+      Resource_exhausted 팀
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      3위
+    </td>
+    <td style="text-align:center">
+      snu_CherryPickers 팀
+    </td>
+  </tr>
+</table>
 
 ## 미션
 * 예선 1차 : 소규모의 라인프렌즈 상품 image retrieval
